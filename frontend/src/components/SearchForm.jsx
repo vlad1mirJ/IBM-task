@@ -31,7 +31,7 @@ const SearchForm = ({ state, setState, setData, data }) => {
           !error && handleSubmit()
         }}
       >
-        {error && <div>{error}</div>}
+        {error && <div className="error">{error}</div>}
         <Search
           aria-label="Search by ticker/symbol"
           type="text"
@@ -123,6 +123,9 @@ const Container = styled.div`
     display: flex;
     justify-content: space-around;
     margin-top: 1em;
+  }
+  .error {
+    color: #9c0e0e;
   }
 `
 

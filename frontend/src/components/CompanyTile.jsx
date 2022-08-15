@@ -19,7 +19,7 @@ const CompanyTile = ({ info, dateFrom, dateTo }) => {
     })
   }
   return (
-    <Conatiner className="profile">
+    <Container className="profile">
       <Link
         to={`/${info.ticker}`}
         state={{ info, dates }}
@@ -36,13 +36,13 @@ const CompanyTile = ({ info, dateFrom, dateTo }) => {
           {info.weburl}
         </a>
       </div>
-    </Conatiner>
+    </Container>
   )
 }
 
 export default CompanyTile
 
-const Conatiner = styled.div`
+const Container = styled.div`
   width: 15.625em;
   height: 8.0625em;
   border: 1px solid black;
